@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
 export const WeatherContext = createContext(null);
 
@@ -10,8 +10,18 @@ export const useWeather = () => {
 
 export const WeatherProvider = ({ children }) => {
   const [weatherData, setWeatherData] = useState(null);
-  const [lastSearchCity, setLastSearchCity] = useState("");
-  const [recentSearches, setRecentSearches] = useState([]);
+
+  const [lastSearchCity, setLastSearchCity] = useState(
+    localStorage.getItem("lastSearchCity") || "",
+  );
+  const [recentSearches, setRecentSearches] = useState(
+    JSON.parse(localStorage.getItem("recentSearches")) || [],
+  );
+
+  useEffect(() => {
+    localStorage.setItem("lastSearchCity", lastSearchCity);
+    localStorage.setItem("recentSearches", JSON.stringify(recentSearches));
+  }, [lastSearchCity, recentSearches]);
 
   return (
     <WeatherContext.Provider

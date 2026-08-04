@@ -39,12 +39,14 @@ const Weather = () => {
 
       setWeatherData(data);
 
-      setLastSearchCity(city);
+      setLastSearchCity(data.location.name);
 
       setRecentSearches((prev) => {
-        const updated = prev.filter((item) => item !== city);
+        const searchedCity = data.location.name;
 
-        return [city, ...updated].slice(0, 5);
+        const updated = prev.filter((item) => item !== searchedCity);
+
+        return [searchedCity, ...updated].slice(0, 5);
       });
 
       setCity("");
