@@ -69,7 +69,7 @@ const Weather = () => {
 
       {lastSearchCity && (
         <div className={styles.lastSearch}>
-          📍 <span>Last Search: </span>
+          📍<span>Last Search: </span>
           {lastSearchCity}
         </div>
       )}
