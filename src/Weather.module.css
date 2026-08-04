@@ -125,19 +125,18 @@
 @media (max-width: 768px) {
   .navbar {
     width: 94%;
-    padding: 18px 20px;
-    gap: 15px;
-
-    margin: 16px auto 10px;
+    margin: 30px auto 8px;
+    padding: 16px 20px;
+    gap: 12px;
   }
 
   .logo {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 
   .navLinks {
-    gap: 22px;
     flex-wrap: wrap;
+    gap: 18px;
   }
 
   .link {
@@ -260,32 +259,29 @@
 /* ===========================
       HOME RESPONSIVE
 =========================== */
-
 @media (max-width: 992px) {
   .home {
-    padding: 30px 20px;
+    padding: 24px 20px;
   }
 
   .hero {
-    padding: 45px 35px;
+    padding: 42px 32px;
   }
 
   .hero h1 {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
   }
 }
 
 @media (max-width: 768px) {
   .home {
-    min-height: calc(100vh - 150px);
-
-    padding: 8px 15px 20px;
+    min-height: calc(65vh);
+    padding: 10px 15px 20px;
   }
 
   .hero {
-    padding: 35px 25px;
-
-    border-radius: 24px;
+    padding: 32px 24px;
+    border-radius: 22px;
   }
 
   .tag {
@@ -298,27 +294,33 @@
 
   .heroText {
     font-size: 0.95rem;
+    margin-bottom: 30px;
+  }
+
+  .heroBtn {
+    padding: 14px 28px;
   }
 }
 
 @media (max-width: 480px) {
   .hero {
-    padding: 28px 20px;
+    padding: 26px 18px;
   }
 
   .hero h1 {
-    font-size: 1.7rem;
+    font-size: 1.65rem;
   }
 
   .heroText {
     font-size: 0.9rem;
+    line-height: 1.7;
   }
 
   .heroBtn {
-    padding: 13px;
+    padding: 12px 24px;
+    font-size: 0.95rem;
   }
 }
-
 /* ===========================
         ABOUT PAGE
 =========================== */
@@ -450,48 +452,48 @@
 
 @media (max-width: 768px) {
   .aboutCard {
-    padding: 38px 25px;
+    padding: 34px 24px;
   }
 
   .aboutCard h1 {
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
 
   .aboutText {
-    font-size: 1rem;
+    font-size: 0.98rem;
   }
 
   .features {
     grid-template-columns: 1fr;
-    gap: 18px;
+    gap: 16px;
   }
 }
 
 @media (max-width: 480px) {
   .about {
-    padding: 20px 15px;
+    padding: 16px 15px;
   }
 
   .aboutCard {
-    padding: 30px 20px;
-    border-radius: 22px;
+    padding: 26px 18px;
+    border-radius: 20px;
   }
 
   .aboutCard h1 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 
   .aboutText {
-    font-size: 0.92rem;
-    line-height: 1.8;
+    font-size: 0.9rem;
+    line-height: 1.7;
   }
 
   .feature {
-    padding: 22px 18px;
+    padding: 20px 16px;
   }
 
   .feature h3 {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 }
 
@@ -616,56 +618,60 @@
 /* ===========================
         RESPONSIVE
 =========================== */
-
 @media (max-width: 768px) {
   .searchBox {
     width: 92%;
-    margin: 30px auto;
+    margin: 24px auto;
   }
 
   .searchHeading {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
   .searchSubHeading {
     font-size: 0.95rem;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   .searchForm {
     flex-direction: row;
-    gap: 10px;
+    gap: 8px;
     padding: 12px;
   }
 
   .searchInput {
-    width: auto;
     flex: 1;
     min-width: 0;
   }
 
   .searchBtn {
-    width: auto;
     padding: 14px 18px;
+    white-space: nowrap;
   }
 }
 
 @media (max-width: 480px) {
+  .searchBox {
+    margin: 20px auto;
+  }
+
   .searchHeading {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 
   .searchSubHeading {
     font-size: 0.9rem;
+    margin-bottom: 16px;
   }
 
   .searchForm {
-    padding: 15px;
-    border-radius: 20px;
+    padding: 12px;
+    border-radius: 18px;
+    gap: 8px;
   }
 
   .searchInput {
-    padding: 14px 16px;
+    padding: 13px 15px;
     font-size: 0.95rem;
   }
 
@@ -702,8 +708,7 @@
 @media (max-width: 768px) {
   .errorMessage {
     width: 92%;
-    padding: 12px 15px;
-
+    padding: 10px 14px;
     font-size: 0.9rem;
   }
 }
@@ -792,12 +797,16 @@
 /* ===========================
       RESPONSIVE
 =========================== */
-
 @media (max-width: 768px) {
   .loader {
-    width: 48px;
-    height: 48px;
+    width: 46px;
+    height: 46px;
     border-width: 4px;
+  }
+
+  .loaderContainer {
+    gap: 14px;
+    margin: 22px auto;
   }
 
   .loaderContainer p {
@@ -806,28 +815,29 @@
 
   .noData {
     width: 92%;
-    padding: 30px 20px;
-    border-radius: 22px;
+    padding: 28px 20px;
+    border-radius: 20px;
   }
 
   .noData h2 {
-    font-size: 1.6rem;
+    font-size: 1.55rem;
   }
 
   .noData p {
     font-size: 0.95rem;
+    line-height: 1.7;
   }
 }
 
 @media (max-width: 480px) {
   .loader {
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
   }
 
   .loaderContainer {
-    gap: 14px;
-    margin: 25px auto;
+    gap: 12px;
+    margin: 20px auto;
   }
 
   .loaderContainer p {
@@ -836,17 +846,17 @@
 
   .noData {
     width: 94%;
-    padding: 25px 18px;
-    border-radius: 20px;
+    padding: 22px 16px;
+    border-radius: 18px;
   }
 
   .noData h2 {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
   }
 
   .noData p {
     font-size: 0.9rem;
-    line-height: 1.7;
+    line-height: 1.6;
   }
 }
 
@@ -1002,46 +1012,47 @@
 
 @media (max-width: 480px) {
   .weatherCard {
-    padding: 20px;
-    border-radius: 20px;
+    padding: 18px;
+    border-radius: 18px;
   }
 
   .cardHeader {
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
     text-align: center;
   }
 
   .cityName {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
   }
 
   .weatherIcon {
-    width: 60px;
-    height: 60px;
+    width: 56px;
+    height: 56px;
   }
 
   .temperature {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 
   .condition {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    margin-bottom: 24px;
   }
 
   .infoBox {
-    padding: 18px;
+    padding: 16px;
   }
 
   .infoBox h4 {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
   }
 
   .infoBox p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
-
 /* weather page styling */
 .weatherPage {
   width: 100%;
@@ -1074,14 +1085,13 @@
 
 @media (max-width: 768px) {
   .lastSearch {
-    width: 92%;
+    width: 94%;
     font-size: 0.95rem;
   }
 }
 
 @media (max-width: 480px) {
   .lastSearch {
-    width: 95%;
     font-size: 0.9rem;
   }
 }
@@ -1110,7 +1120,8 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 8px;
+  margin-left: 20px;
+  gap: 5px;
 }
 
 .cityText {
@@ -1118,12 +1129,6 @@
 
   font-size: 1rem;
   font-weight: 600;
-
-  transition: color 0.3s ease;
-}
-
-.cityText:hover {
-  color: #4834df;
 }
 
 @media (max-width: 768px) {
@@ -1139,11 +1144,11 @@
 
 @media (max-width: 480px) {
   .recentSearches {
-    width: 95%;
+    width: 94%;
   }
 
   .recentTitle,
-  .cityBtn {
+  .cityText {
     font-size: 0.9rem;
   }
 }
