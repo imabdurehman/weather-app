@@ -1,0 +1,111 @@
+/* ===========================
+        GOOGLE FONT
+=========================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ===========================
+        RESET
+=========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===========================
+        BODY
+=========================== */
+
+body {
+  min-height: 100vh;
+
+  font-family: "Poppins", sans-serif;
+
+  background: linear-gradient(135deg, #7a80fb 0%, #a5b4fb 55%, #6875fa 100%);
+
+  background-attachment: fixed;
+
+  color: #2d2b76;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  overflow-x: hidden;
+}
+
+/* ===========================
+        ROOT
+=========================== */
+
+#root {
+  min-height: 100vh;
+}
+
+/* ===========================
+        LINKS
+=========================== */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===========================
+    BUTTONS & INPUTS
+=========================== */
+
+button,
+input {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ===========================
+        IMAGES
+=========================== */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ===========================
+        SELECTION
+=========================== */
+
+::selection {
+  background: rgba(72, 52, 223, 0.25);
+  color: #2d2b76;
+}
+
+/* ===========================
+        SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(72, 52, 223, 0.45);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(72, 52, 223, 0.65);
+}

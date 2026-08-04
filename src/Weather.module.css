@@ -1,0 +1,1147 @@
+/* ===========================
+        NAVBAR
+=========================== */
+
+.navbar {
+  width: 85%;
+  max-width: 1100px;
+
+  margin: 30px auto;
+  padding: 22px 35px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.6);
+
+  border-radius: 28px;
+
+  box-shadow:
+    0 12px 35px rgba(45, 43, 118, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+/* ===========================
+          LOGO
+=========================== */
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+
+  color: #2d2b76;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  color: #4834df;
+}
+
+/* ===========================
+      NAVIGATION
+=========================== */
+
+.navLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 40px;
+}
+
+/* ===========================
+         LINKS
+=========================== */
+
+.link {
+  position: relative;
+
+  text-decoration: none;
+
+  color: #6a6a9f;
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  color: #4834df;
+}
+
+/* Hover Underline */
+
+.link::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: -8px;
+
+  width: 0;
+  height: 3px;
+
+  background: #4834df;
+
+  border-radius: 999px;
+
+  transform: translateX(-50%);
+
+  transition: width 0.3s ease;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+/* ===========================
+       ACTIVE LINK
+=========================== */
+
+.active {
+  color: #4834df;
+
+  font-weight: 600;
+}
+
+/* ===========================
+       RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+  .navbar {
+    width: 94%;
+    padding: 18px 20px;
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 1.7rem;
+  }
+
+  .navLinks {
+    gap: 22px;
+    flex-wrap: wrap;
+  }
+
+  .link {
+    font-size: 0.95rem;
+  }
+}
+
+/* ===========================
+        HOME PAGE
+=========================== */
+
+.home {
+  min-height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+}
+
+.hero {
+  width: 100%;
+  max-width: 760px;
+
+  padding: 60px 50px;
+
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.6);
+
+  border-radius: 28px;
+
+  box-shadow:
+    0 20px 45px rgba(45, 43, 118, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+
+  transition: all 0.35s ease;
+}
+
+.hero:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 28px 55px rgba(45, 43, 118, 0.18),
+    0 0 25px rgba(122, 128, 251, 0.25);
+}
+
+.tag {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  color: #4834df;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  color: #2d2b76;
+
+  font-size: 3.3rem;
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  margin-bottom: 22px;
+}
+
+.heroText {
+  color: #6a6a9f;
+
+  font-size: 1.05rem;
+
+  line-height: 1.8;
+
+  margin-bottom: 38px;
+}
+
+.heroBtn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 15px 40px;
+
+  border-radius: 999px;
+
+  background: linear-gradient(135deg, #5d4bff, #4834df);
+
+  color: #ffffff;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  box-shadow: 0 12px 30px rgba(72, 52, 223, 0.3);
+
+  transition: all 0.3s ease;
+}
+
+.heroBtn:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 16px 35px rgba(72, 52, 223, 0.4);
+
+  background: linear-gradient(135deg, #4834df, #3926c9);
+}
+
+/* ===========================
+      HOME RESPONSIVE
+=========================== */
+
+@media (max-width: 992px) {
+  .home {
+    padding: 30px 20px;
+  }
+
+  .hero {
+    padding: 45px 35px;
+  }
+
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    min-height: calc(100vh - 150px);
+
+    padding: 20px 15px;
+  }
+
+  .hero {
+    padding: 35px 25px;
+
+    border-radius: 24px;
+  }
+
+  .tag {
+    font-size: 0.85rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .heroText {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 28px 20px;
+  }
+
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .heroText {
+    font-size: 0.9rem;
+  }
+
+  .heroBtn {
+    padding: 13px;
+  }
+}
+
+/* ===========================
+        ABOUT PAGE
+=========================== */
+
+.about {
+  min-height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+}
+
+.aboutCard {
+  width: 100%;
+  max-width: 900px;
+
+  padding: 55px 45px;
+
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.6);
+
+  border-radius: 28px;
+
+  box-shadow:
+    0 20px 45px rgba(45, 43, 118, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+
+  transition: all 0.35s ease;
+}
+
+.aboutCard:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 28px 55px rgba(45, 43, 118, 0.18),
+    0 0 25px rgba(122, 128, 251, 0.25);
+}
+
+.aboutTag {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  color: #4834df;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.aboutCard h1 {
+  color: #2d2b76;
+
+  font-size: 2.9rem;
+  font-weight: 700;
+
+  margin-bottom: 20px;
+}
+
+.aboutText {
+  color: #6a6a9f;
+
+  line-height: 1.9;
+
+  font-size: 1.05rem;
+
+  margin-bottom: 45px;
+}
+
+.features {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 24px;
+}
+
+.feature {
+  padding: 28px 22px;
+
+  background: rgba(255, 255, 255, 0.45);
+
+  border: 1px solid rgba(255, 255, 255, 0.6);
+
+  border-radius: 20px;
+
+  backdrop-filter: blur(12px);
+
+  transition: all 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-6px);
+
+  background: rgba(255, 255, 255, 0.6);
+
+  box-shadow: 0 12px 28px rgba(72, 52, 223, 0.15);
+}
+
+.feature h3 {
+  color: #2d2b76;
+
+  margin-bottom: 12px;
+
+  font-size: 1.2rem;
+}
+
+.feature p {
+  color: #6a6a9f;
+
+  line-height: 1.7;
+
+  font-size: 0.95rem;
+}
+
+/* ===========================
+    ABOUT RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+  .aboutCard {
+    padding: 38px 25px;
+  }
+
+  .aboutCard h1 {
+    font-size: 2.1rem;
+  }
+
+  .aboutText {
+    font-size: 1rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 20px 15px;
+  }
+
+  .aboutCard {
+    padding: 30px 20px;
+    border-radius: 22px;
+  }
+
+  .aboutCard h1 {
+    font-size: 1.7rem;
+  }
+
+  .aboutText {
+    font-size: 0.92rem;
+    line-height: 1.8;
+  }
+
+  .feature {
+    padding: 22px 18px;
+  }
+
+  .feature h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* ===========================
+        SEARCH SECTION
+=========================== */
+
+.searchBox {
+  width: 75%;
+  max-width: 600px;
+
+  margin: 35px auto;
+}
+
+.searchHeading {
+  text-align: center;
+
+  color: #2d2b76;
+
+  font-size: 2.4rem;
+  font-weight: 700;
+
+  margin-bottom: 10px;
+}
+
+.searchSubHeading {
+  text-align: center;
+
+  color: #6a6a9f;
+
+  font-size: 1rem;
+
+  margin-bottom: 25px;
+}
+
+/* ===========================
+        SEARCH FORM
+=========================== */
+
+.searchForm {
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 16px;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.6);
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 12px 35px rgba(45, 43, 118, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+/* ===========================
+          INPUT
+=========================== */
+
+.searchInput {
+  flex: 1;
+
+  padding: 15px 20px;
+
+  border: none;
+  outline: none;
+
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.45);
+
+  color: #2d2b76;
+
+  font-size: 1rem;
+}
+
+.searchInput::placeholder {
+  color: #6a6a9f;
+}
+
+/* ===========================
+          BUTTON
+=========================== */
+
+.searchBtn {
+  padding: 15px 28px;
+
+  border: none;
+
+  border-radius: 16px;
+
+  background: linear-gradient(135deg, #5d4bff, #4834df);
+
+  color: #ffffff;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 10px 25px rgba(72, 52, 223, 0.25);
+}
+
+.searchBtn:hover {
+  transform: translateY(-2px);
+
+  background: linear-gradient(135deg, #4834df, #3926c9);
+
+  box-shadow: 0 14px 30px rgba(72, 52, 223, 0.35);
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+  .searchBox {
+    width: 92%;
+    margin: 30px auto;
+  }
+
+  .searchHeading {
+    font-size: 2rem;
+  }
+
+  .searchSubHeading {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+
+  .searchForm {
+    flex-direction: row;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .searchInput {
+    width: auto;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .searchBtn {
+    width: auto;
+    padding: 14px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .searchHeading {
+    font-size: 1.7rem;
+  }
+
+  .searchSubHeading {
+    font-size: 0.9rem;
+  }
+
+  .searchForm {
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  .searchInput {
+    padding: 14px 16px;
+    font-size: 0.95rem;
+  }
+
+  .searchBtn {
+    padding: 13px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* error message component styling */
+.errorMessage {
+  width: 75%;
+  max-width: 600px;
+
+  margin: 20px auto 0;
+
+  padding: 12px 25px;
+
+  text-align: center;
+
+  background: rgba(255, 80, 80, 0.15);
+
+  border: 1px solid rgba(255, 80, 80, 0.35);
+
+  border-radius: 14px;
+
+  color: #d32f2f;
+
+  font-weight: 600;
+
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .errorMessage {
+    width: 92%;
+    padding: 12px 15px;
+
+    font-size: 0.9rem;
+  }
+}
+
+/* ===========================
+          LOADER
+=========================== */
+
+.loaderContainer {
+  width: 90%;
+  max-width: 600px;
+
+  margin: 35px auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  text-align: center;
+}
+
+.loader {
+  width: 55px;
+  height: 55px;
+
+  border: 5px solid rgba(72, 52, 223, 0.15);
+  border-top: 5px solid #4834df;
+
+  border-radius: 50%;
+
+  animation: spin 0.8s linear infinite;
+}
+
+.loaderContainer p {
+  color: #6a6a9f;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===========================
+          NO DATA
+=========================== */
+
+.noData {
+  width: 70%;
+  max-width: 600px;
+
+  margin: 40px auto;
+  padding: 40px 30px;
+
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.6);
+
+  border-radius: 28px;
+
+  box-shadow: 0 12px 35px rgba(45, 43, 118, 0.12);
+}
+
+.noData h2 {
+  color: #2d2b76;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.noData p {
+  color: #6a6a9f;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* ===========================
+      RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+  .loader {
+    width: 48px;
+    height: 48px;
+    border-width: 4px;
+  }
+
+  .loaderContainer p {
+    font-size: 0.95rem;
+  }
+
+  .noData {
+    width: 92%;
+    padding: 30px 20px;
+    border-radius: 22px;
+  }
+
+  .noData h2 {
+    font-size: 1.6rem;
+  }
+
+  .noData p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .loader {
+    width: 42px;
+    height: 42px;
+  }
+
+  .loaderContainer {
+    gap: 14px;
+    margin: 25px auto;
+  }
+
+  .loaderContainer p {
+    font-size: 0.9rem;
+  }
+
+  .noData {
+    width: 94%;
+    padding: 25px 18px;
+    border-radius: 20px;
+  }
+
+  .noData h2 {
+    font-size: 1.4rem;
+  }
+
+  .noData p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+}
+
+/* ===========================
+        WEATHER CARD
+=========================== */
+
+.weatherCard {
+  width: 75%;
+  max-width: 600px;
+
+  margin: 35px auto;
+  padding: 30px;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 24px;
+
+  box-shadow:
+    0 12px 35px rgba(45, 43, 118, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+/* ===========================
+        CARD HEADER
+=========================== */
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+.cityName {
+  color: #2d2b76;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.country {
+  color: #6a6a9f;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.weatherIcon {
+  width: 80px;
+  height: 80px;
+}
+
+/* ===========================
+      TEMPERATURE
+=========================== */
+
+.temperature {
+  text-align: center;
+
+  color: #4834df;
+
+  font-size: 4rem;
+  font-weight: 700;
+
+  margin-bottom: 10px;
+}
+
+.condition {
+  text-align: center;
+
+  color: #6a6a9f;
+
+  font-size: 1.2rem;
+
+  margin-bottom: 30px;
+}
+
+/* ===========================
+      WEATHER INFO
+=========================== */
+
+.weatherInfo {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.infoBox {
+  flex: 1;
+
+  text-align: center;
+
+  padding: 20px;
+
+  background: rgba(255, 255, 255, 0.45);
+
+  border-radius: 18px;
+
+  box-shadow: 0 6px 18px rgba(45, 43, 118, 0.08);
+}
+
+.infoBox h4 {
+  color: #4834df;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  margin-bottom: 10px;
+}
+
+.infoBox p {
+  color: #2d2b76;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+  .weatherCard {
+    width: 92%;
+    padding: 24px;
+  }
+
+  .cityName {
+    font-size: 1.6rem;
+  }
+
+  .weatherIcon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .temperature {
+    font-size: 3rem;
+  }
+
+  .condition {
+    font-size: 1rem;
+  }
+
+  .weatherInfo {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .weatherCard {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .cardHeader {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .cityName {
+    font-size: 1.4rem;
+  }
+
+  .weatherIcon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .temperature {
+    font-size: 2.6rem;
+  }
+
+  .condition {
+    font-size: 0.95rem;
+  }
+
+  .infoBox {
+    padding: 18px;
+  }
+
+  .infoBox h4 {
+    font-size: 0.95rem;
+  }
+
+  .infoBox p {
+    font-size: 1.1rem;
+  }
+}
+
+/* weather page styling */
+.weatherPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* last Search city styling */
+.lastSearch {
+  width: 75%;
+  max-width: 600px;
+
+  margin-top: 18px;
+
+  color: #2d2b76;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lastSearch span {
+  color: #4834df;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .lastSearch {
+    width: 92%;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .lastSearch {
+    width: 95%;
+    font-size: 0.9rem;
+  }
+}
+
+/* recent searches styling */
+.recentSearches {
+  width: 75%;
+  max-width: 600px;
+
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.recentTitle {
+  color: #4834df;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.cityList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cityText {
+  color: #2d2b76;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: color 0.3s ease;
+}
+
+.cityText:hover {
+  color: #4834df;
+}
+
+@media (max-width: 768px) {
+  .recentSearches {
+    width: 92%;
+  }
+
+  .recentTitle,
+  .cityText {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .recentSearches {
+    width: 95%;
+  }
+
+  .recentTitle,
+  .cityBtn {
+    font-size: 0.9rem;
+  }
+}
