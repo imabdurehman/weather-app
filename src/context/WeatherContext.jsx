@@ -9,12 +9,15 @@ export const useWeather = () => {
 };
 
 export const WeatherProvider = ({ children }) => {
+  const [weatherData, setWeatherData] = useState(null);
   const [lastSearchCity, setLastSearchCity] = useState("");
   const [recentSearches, setRecentSearches] = useState([]);
 
   return (
     <WeatherContext.Provider
       value={{
+        weatherData,
+        setWeatherData,
         lastSearchCity,
         setLastSearchCity,
         recentSearches,

@@ -10,6 +10,8 @@ import { useWeather } from "../context/WeatherContext";
 
 const Weather = () => {
   const {
+    weatherData,
+    setWeatherData,
     lastSearchCity,
     setLastSearchCity,
     recentSearches,
@@ -17,7 +19,6 @@ const Weather = () => {
   } = useWeather();
 
   const [city, setCity] = useState("");
-  const [weatherData, setWeatherData] = useState(null);
   const [loader, setLoader] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
