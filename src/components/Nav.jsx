@@ -11,7 +11,7 @@ function Navbar() {
       <h2 className={styles.logo}>WeatherNow</h2>
 
       <div className={styles.navLinks}>
-        <NavLink to="/" className={activeCheck}>
+        <NavLink to="/" end className={activeCheck}>
           Home
         </NavLink>
 
