@@ -12,10 +12,10 @@ export const WeatherProvider = ({ children }) => {
   const [weatherData, setWeatherData] = useState(null);
 
   const [lastSearchCity, setLastSearchCity] = useState(
-    localStorage.getItem("lastSearchCity") || "",
+    () => localStorage.getItem("lastSearchCity") || "",
   );
   const [recentSearches, setRecentSearches] = useState(
-    JSON.parse(localStorage.getItem("recentSearches")) || [],
+    () => JSON.parse(localStorage.getItem("recentSearches")) || [],
   );
 
   useEffect(() => {
