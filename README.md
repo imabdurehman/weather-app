@@ -88,10 +88,4 @@ npm start
 
 ---
 
-## Author
-
-**Abdulrehman Siddiqi**
-
-**GitHub:** https://github.com/imabdurehman
-
-**LinkedIn:** https://www.linkedin.com/in/imabdurehman
+⭐ If you found this project helpful, consider giving it a Star!
